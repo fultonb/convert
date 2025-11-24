@@ -1,0 +1,28 @@
+[project]
+name = "convert"
+version = "0.1.0"
+description = "Contains functions to convert base10, base 2, and base 16 numbers."
+readme = "README.md"
+authors = [{ name = "Brad Fulton", email = "fultonbd@gmail.com" }]
+requires-python = ">=3.14"
+dependencies = []
+
+[project.scripts]
+# cli_command_name = "module_path:function_name"
+# If your code is in src/example/main.py, 
+# the entry would be "example.main:main". 
+convert = "convert.convert:main"
+
+[build-system]
+requires = ["uv_build>=0.8.14,<0.9.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = ["pytest>=9.0.0"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src/convert/"]
+
+# Used by pylance
+[tool.pyright]
+extraPaths = ["src/convert"]
