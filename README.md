@@ -35,6 +35,7 @@ $ uv run pytest -sv
 $ uv run pytest tests/test_CLI.py -sv
 $ uv run src/convert/convert.py -hd ffff
                or
+$ chmod 744 src/convert/convert.py
 $ ./src/convert/convert.py -hd ffff
 
 ```
