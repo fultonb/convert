@@ -11,7 +11,25 @@ It creates a Commanad Line Interface (CLI) that will perform calculations to con
     base_10_to_base_16
 ```
 
-The commands for the CLI are:
+## Installation
+
+Clone from GitHub.
+
+```bash
+git clone https://github.com/fultonb/convert.git
+```
+
+Install uv.\
+See: https://docs.astral.sh/uv/getting-started/installation/#installation-methods
+
+On mac:
+```
+$ brew install uv
+```
+
+## Usage
+
+###### The flags used in the CLI are:
 ```
     -bd8,  Binary to Decimal (ie. input val = 11110000, input = 8 bits)
     -bd16, Binary to Decimal (ie. input val = 1111000011110000, input = 16 bits)
@@ -39,7 +57,7 @@ $ chmod 744 src/convert/convert.py
 $ ./src/convert/convert.py -hd ffff
 
 ```
-Bring up help menu:
+###### Bring up help menu:
 ```
 $ uv run src/convert/convert.py -h
                or
